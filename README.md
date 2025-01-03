@@ -30,3 +30,41 @@ middleware is between frontend and backend and it checks that user should be acc
 #Prettier is used to install from npm so that file structure will be maintained
 
 prettier ignore is used to made,in which files the prettier should not be implemented
+
+main work is done on index file
+# dotenv file is downloaded
+# mongoose is used to connect witht the db
+# app means backend is created through express
+
+######2 imp. things
+
+ try catch main wrap karo ya promises lo db se baat krte hue
+ db is also in another continent mtlb ye hai ki time lgta hai,mtlb always use async await while talking to db
+
+## we import env variables asap because we want env variables to load as soon as the first file is loading,so that every other file can get acces to it
+on top : require ('dotenv').config({path:'./env'})
+or
+import dotenv from 'dotenv'
+
+and at last 
+dotenv.config({
+path:'./env'
+})
+ add somethings on dev script check it out
+
+ ##  app.use  we use when we need to do middleware or configuration settings
+
+ make an express app in express
+
+ npm i cookie-parser
+ npm i cors
+
+ apiResponse and apiError utility functions we are creating to give proper uniform response to all users
+
+#### HTTP response status codes indicate whether a specific HTTP request has been successfully completed. Responses are grouped in five classes:
+
+Informational responses (100 – 199)
+Successful responses (200 – 299)
+Redirection messages (300 – 399)
+Client error responses (400 – 499)
+Server error responses (500 – 599)
