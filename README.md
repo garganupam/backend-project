@@ -68,3 +68,29 @@ Successful responses (200 – 299)
 Redirection messages (300 – 399)
 Client error responses (400 – 499)
 Server error responses (500 – 599)
+
+##  npm i mongoose-aggregate-paginate-v2 is used to write aggregation queries
+
+mongoose gives many middlewares to use.
+
+## bcrypt package is used to hash passwords
+*jwt is used to:
+
+*JWT is commonly used for stateless authentication.
+*After a user logs in, the server generates a JWT containing user-specific information (e.g., user ID, roles) and sends it back to the client.
+*The client stores the JWT (typically in localStorage, sessionStorage, or a cookie) and includes it in subsequent requests (usually in the Authorization header).
+*The server verifies the token to identify and authorize the user without requiring session storage.
+
+mongoose provides middleware , and that contains hooks (pre and post hook), pre hook is used when we want to do something before saving the data on the server
+
+##To upload files ,we use cloudinary and two packages installed multer/express-fileupload
+
+#File upload technique:
+
+we use multer to take that file from user and put it on the local storage then we will use cloudinary to take that file from loacal server and put it on to server
+,we use 2 steps beacuse happens in production grade and if upload lacks in something then we will have another chance  to directly upload it from our local storage
+
+multer use krke middleware,mtlb jhn jhn file upload capabilities ki jrurat hogi...vhn multer inject kar denge
+
+
+####################################### https://turbo-spork-4ppv5wq9v54cq6x7-8000.app.github.dev/ #######################################################

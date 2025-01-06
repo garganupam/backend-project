@@ -18,4 +18,16 @@ app.use(express.static("public"))//kei bar files filder store kena chahta hu mer
 //cookie parser ka kam hai ki user k browser pr server se crud operations perform kar paun
 app.use(cookieParser())
 
+
+//routes import in this app at this point
+
+import userRouter from './routes/user.routes.js'
+
+//routes declaration like this
+
+app.use('/api/v1/users',userRouter)//iske baad sara shift hogya user.routes par..ab iske aage sare methods vahin likhe jayenge
+
+//after calling this route,such url will be made    http://localhost:8000/api/v1/users/register
+
+
 export {app}
